@@ -1,0 +1,10 @@
+# Stabilizing reverse shell
+python -c 'import pty;pty.spawn("/bin/bash")'
+Ctrl + Z
+
+fg + [Enter x 2]
+echo $TERM
+export TERM=xterm
+stty rows 55 columns 4096
+reset
+export SHELL=bash
