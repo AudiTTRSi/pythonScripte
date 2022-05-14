@@ -1,6 +1,7 @@
 ###################
 #
 # Sal's Shipping
+# example from https://www.codecademy.com/
 # author : coreBlaster75491 aka Rok Kepa
 ##################
 
@@ -47,7 +48,7 @@ def cheapest_shipping(weight):
         return "Chepest shipping is premium shipping for " + str(premium_price) + "$."
   else:
         return "Chepest shipping is drone shipping for " + str(drone_price) + "$."
-    
+
 
 print(shipping_cost(3, "standard"))
 print(shipping_cost(4.8, "standard"))

@@ -2,6 +2,7 @@
 #
 #  Ordering bot
 # Author : Rok Kepa aka AudiTTRSi
+# example from https://www.codecademy.com/
 # Version 1.0
 #
 ########################
