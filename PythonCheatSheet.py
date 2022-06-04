@@ -38,3 +38,27 @@ cubes = [digit**3 for digit in single_digits]
 #####################
 #  functions        #
 #####################
+
+
+#####################
+#  string           #
+#####################
+
+#splitting string
+spring_storm_text = \
+"""The sky has given over
+its bitterness.
+Out of the dark change
+all day long
+rain falls and falls
+as if it would never end.
+"""
+
+spring_storm_lines = spring_storm_text.split('\n')
+
+#joining string
+reapers_line_one_words = ["Black", "reapers", "with", "the", "sound", "of", "steel", "on", "stones"]
+reapers_line_one = " ".join(reapers_line_one_words)
+
+winter_trees_lines = ['All the complicated details', 'of the attiring and', 'the disattiring are completed!', 'A liquid moon', 'moves gently among', 'the long branches.', 'Thus having prepared their buds', 'against a sure winter', 'the wise trees', 'stand sleeping in the cold.']
+winter_trees_full = '\n'.join(winter_trees_lines)
