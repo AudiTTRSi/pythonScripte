@@ -96,8 +96,21 @@ def poem_description(publishing_date, author, title, original_work):
   poem_desc = "The poem {title} by {author} was originally published in {original_work} in {publishing_date}.".format(publishing_date=publishing_date, author=author, title=title, original_work=original_work)
   return poem_desc
 
-  #####################
-  #  modules          #
-  #####################
+#####################
+#  modules          #
+#####################
 from module_name import object_name as name_you_pick
 from matplotlib import pyplot as plt
+
+#####################
+#  dictionaries     #
+#####################
+translations = {"mountain":"orod","bread":"bass","friend":"mellon","horse":"roch"}
+children = {"von Trapp":["Johannes", "Rosmarie", "Eleonore"] , "Corleone":["Sonny", "Fredo", "Michael"] }
+#empty dic and adding key value pair
+animals_in_zoo = {}
+animals_in_zoo["zebras"]= 8
+
+#adding multiple entries to dic in one line
+user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
+user_ids.update({"theLooper": 138475, "stringQueen":85739})
