@@ -114,3 +114,16 @@ animals_in_zoo["zebras"]= 8
 #adding multiple entries to dic in one line
 user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
 user_ids.update({"theLooper": 138475, "stringQueen":85739})
+
+#dictionary comprehension
+drinks = ["espresso", "chai", "decaf", "drip"]
+caffeine = [64, 40, 0, 120]
+zipped_drinks = zip(drinks,caffeine)
+
+drinks_to_caffeine = {key:value for key,value in zipped_drinks}
+
+#dictonary get all items
+pct_women_in_occupation = {"CEO": 28, "Engineering Manager": 9, "Pharmacist": 58, "Physician": 40, "Lawyer": 37, "Aerospace Engineer": 9}
+
+for name, value in pct_women_in_occupation.items():
+  print("Women make up " + str(value) + " percent of "+ name + "s")
