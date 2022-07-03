@@ -127,3 +127,17 @@ pct_women_in_occupation = {"CEO": 28, "Engineering Manager": 9, "Pharmacist": 58
 
 for name, value in pct_women_in_occupation.items():
   print("Women make up " + str(value) + " percent of "+ name + "s")
+
+#####################
+#  fiiles           #
+#####################$
+
+#opening and reading fiiles
+with open('millay_sonnet.txt') as sonnet_doc:
+first_line = sonnet_doc.readline()
+second_line = sonnet_doc.readline()
+print(second_line)
+
+#writing to file
+with open('generated_file.txt', 'w') as gen_file:
+    gen_file.write("What an incredible file!")
