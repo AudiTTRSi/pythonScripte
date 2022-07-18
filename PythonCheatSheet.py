@@ -129,8 +129,8 @@ for name, value in pct_women_in_occupation.items():
   print("Women make up " + str(value) + " percent of "+ name + "s")
 
 #####################
-#  fiiles           #
-#####################$
+#  files            #
+#####################
 
 #opening and reading fiiles
 with open('millay_sonnet.txt') as sonnet_doc:
@@ -149,3 +149,27 @@ with open('cool_csv.csv') as cool_csv_file:
   cool_csv_dict = csv.DictReader(cool_csv_file)
   for row in cool_csv_dict:
     print(row['Cool Fact'])
+
+#readign json file
+import json
+
+with open('message.json') as message_json:
+  message = json.load(message_json)
+
+  print(message)
+
+  #####################
+  #  obj oriented     #
+  #####################
+
+  # self contructor
+class SearchEngineEntry:
+    def __init__(self, url):
+        self.url = url
+
+codecademy = SearchEngineEntry("www.codecademy.com")
+wikipedia = SearchEngineEntry("www.wikipedia.org")
+print(codecademy.url)
+# prints "www.codecademy.com"
+print(wikipedia.url)
+# prints "www.wikipedia.org"
