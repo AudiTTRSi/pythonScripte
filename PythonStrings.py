@@ -77,3 +77,19 @@ def x_length_words(sentence,x):
       return True
     else:
       return False  
+
+    
+"""
+Function to check if string name is included in string setence
+
+"""
+def check_for_name(sentence, name):
+  return name.lower() in sentence.lower()
+"""
+FUnction that returns every second letter of the string
+"""
+def every_other_letter(word):
+  every_other = ""
+  for i in range(0, len(word), 2):
+    every_other += word[i]
+  return every_other
