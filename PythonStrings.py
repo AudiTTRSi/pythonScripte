@@ -93,3 +93,13 @@ def every_other_letter(word):
   for i in range(0, len(word), 2):
     every_other += word[i]
   return every_other
+
+"""
+reversing string 
+"""
+
+def reverse_string(word):
+  new_string = ""
+  for i in range(len(word)-1, -1, -1):
+    new_string += word[i]
+  return new_string
