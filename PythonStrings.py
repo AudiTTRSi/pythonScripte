@@ -114,4 +114,4 @@ def make_spoonerism(word1,word2):
   word2_rest_word = word2[1:]
   word1_new = word2_2nd_letter + word1_rest_word
   word2_new = word1_1st_letter + word2_rest_word
-  return(word1_new,word2_new)
+  return(word1_new + " " + word2_new)
