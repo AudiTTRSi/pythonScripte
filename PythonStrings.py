@@ -103,3 +103,15 @@ def reverse_string(word):
   for i in range(len(word)-1, -1, -1):
     new_string += word[i]
   return new_string
+
+"""
+spoonerism Hello world / Wello Horld
+"""
+def make_spoonerism(word1,word2):
+  word1_1st_letter = word1[0]
+  word2_2nd_letter = word2[0]
+  word1_rest_word = word1[1:]
+  word2_rest_word = word2[1:]
+  word1_new = word2_2nd_letter + word1_rest_word
+  word2_new = word1_1st_letter + word2_rest_word
+  return(word1_new,word2_new)
