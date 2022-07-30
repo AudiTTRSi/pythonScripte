@@ -62,3 +62,39 @@ def max_key(my_dictionary):
       largest_value = value
       largest_key = key
   return largest_key
+
+"""
+6)
+Write a function named word_length_dictionary that takes a list of strings named words as a parameter. 
+The function should return a dictionary of key/value pairs where every key is a word in words and every value is the length of that word. 
+"""
+def word_length_dictionary(words):
+  word_lengths = {}
+  for word in words:
+    word_lengths[word] = len(word)
+  return word_lengths
+
+"""
+7)
+Write a function named frequency_dictionary that takes a list of elements named words as a parameter. 
+The function should return a dictionary containing the frequency of each element in words.
+"""
+
+def frequency_dictionary(words):
+  freq_words = {}
+  for word in words:
+    if word not in freq_words:
+      freq_words[word] = 0
+    freq_words[word] += 1
+
+  return freq_words
+"""
+8)
+unique values in dictionary
+"""
+def unique_values(my_dictionary):
+  seen_values = []
+  for value in my_dictionary.values():
+    if value not in seen_values:
+      seen_values.append(value)
+  return len(seen_values)
