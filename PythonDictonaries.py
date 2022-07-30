@@ -38,3 +38,14 @@ def add_ten(my_dictionary):
    for key in my_dictionary.keys():
      my_dictionary[key] +=10
    return my_dictionary   
+
+"""
+4)
+FUnction that returns values that are present in dictionary as key and as values
+"""
+def values_that_are_keys(my_dictionary):
+  value_keys = []
+  for value in my_dictionary.values():
+    if value in my_dictionary:
+      value_keys.append(value)
+  return value_keys
