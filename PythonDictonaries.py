@@ -49,3 +49,16 @@ def values_that_are_keys(my_dictionary):
     if value in my_dictionary:
       value_keys.append(value)
   return value_keys
+
+"""
+5)
+return Key with max value
+"""
+def max_key(my_dictionary):
+  largest_key = float("-inf")
+  largest_value = float("-inf")
+  for key, value in my_dictionary.items():
+    if value > largest_value:
+      largest_value = value
+      largest_key = key
+  return largest_key
