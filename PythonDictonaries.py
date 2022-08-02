@@ -6,7 +6,7 @@
 
 """
 1)
-Write a function named sum_values that takes a dictionary named my_dictionary as a parameter. 
+Write a function named sum_values that takes a dictionary named my_dictionary as a parameter.
 The function should return the sum of the values of the dictionary
 """
 
@@ -26,18 +26,18 @@ def sum_even_keys(my_dictionary):
   for key in my_dictionary.keys():
     if key % 2 == 0:
       sum += my_dictionary[key]
-  return sum   
+  return sum
 
 """
 3)
-Create a function named add_ten that takes a dictionary with integer values named my_dictionary as a parameter. 
+Create a function named add_ten that takes a dictionary with integer values named my_dictionary as a parameter.
 The function should add 10 to every value in my_dictionary and return my_dictionary
 
 """
 def add_ten(my_dictionary):
    for key in my_dictionary.keys():
      my_dictionary[key] +=10
-   return my_dictionary   
+   return my_dictionary
 
 """
 4)
@@ -65,8 +65,8 @@ def max_key(my_dictionary):
 
 """
 6)
-Write a function named word_length_dictionary that takes a list of strings named words as a parameter. 
-The function should return a dictionary of key/value pairs where every key is a word in words and every value is the length of that word. 
+Write a function named word_length_dictionary that takes a list of strings named words as a parameter.
+The function should return a dictionary of key/value pairs where every key is a word in words and every value is the length of that word.
 """
 def word_length_dictionary(words):
   word_lengths = {}
@@ -76,7 +76,7 @@ def word_length_dictionary(words):
 
 """
 7)
-Write a function named frequency_dictionary that takes a list of elements named words as a parameter. 
+Write a function named frequency_dictionary that takes a list of elements named words as a parameter.
 The function should return a dictionary containing the frequency of each element in words.
 """
 
@@ -98,3 +98,26 @@ def unique_values(my_dictionary):
     if value not in seen_values:
       seen_values.append(value)
   return len(seen_values)
+
+"""
+9)
+Create a function named count_first_letter that takes a dictionary named names as a parameter.
+names should be a dictionary where the key is a last name and the value is a list of first names.
+For example, the dictionary might look like this:
+
+names = {"Stark": ["Ned", "Robb", "Sansa"], "Snow" : ["Jon"], "Lannister": ["Jaime", "Cersei", "Tywin"]}
+The function should return a new dictionary where each key is the first letter of a last name,
+and the value is the number of people whose last name begins with that letter.
+
+So in example above, the function would return:
+
+{"S" : 4, "L": 3}
+  """
+def count_first_letter(names):
+  letters = {}
+  for key in names:
+    first_letter = key[0]
+    if first_letter not in letters:
+      letters[first_letter] = 0
+    letters[first_letter] += len(names[key])
+  return letters
