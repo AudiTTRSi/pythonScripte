@@ -94,8 +94,10 @@ df['Margin'] = df['Price'] - df['Cost to Manufacture']
 # adding columns with string operations ( takes df column name and applies string operation on Name column)
 df['Lowercase Name']= df.Name.apply(str.lower)
 
-# Rrenaming the columns in df
+# Renaming the columns in df
 df.columns = ['ID','Title','Category','Year Released','Rating']
+# Renaming the columns in df
+df.rename(columns={'name':'movie_title'}, inplace=True)
 
 #lambda function to read first and last char of the strings
 mylambda = lambda x: x[0] + x[-1]
