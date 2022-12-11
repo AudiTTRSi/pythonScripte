@@ -94,6 +94,9 @@ df['Margin'] = df['Price'] - df['Cost to Manufacture']
 # adding columns with string operations ( takes df column name and applies string operation on Name column)
 df['Lowercase Name']= df.Name.apply(str.lower)
 
+# Rrenaming the columns in df
+df.columns = ['ID','Title','Category','Year Released','Rating']
+
 #lambda function to read first and last char of the strings
 mylambda = lambda x: x[0] + x[-1]
 
@@ -110,3 +113,5 @@ df['Email Provider'] = df.Email.apply(
 #lambda function to split name and last name where in column name both are written
 get_last_name = lambda x: x.split(' ')[-1]
 df['last_name'] = df.name.apply(get_last_name)
+
+
