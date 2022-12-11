@@ -121,3 +121,6 @@ most_expensive = orders['price'].max()
 
 #number of unique values in column shoe_color from dataframe orders
 num_colors = orders['shoe_color'].nunique()
+
+#df.groupby('column1').column2.measurement()
+pricey_shoes = orders.groupby('shoe_type').price.max()
