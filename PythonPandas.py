@@ -116,4 +116,8 @@ df['Email Provider'] = df.Email.apply(
 get_last_name = lambda x: x.split(' ')[-1]
 df['last_name'] = df.name.apply(get_last_name)
 
+#max value in the column price from dataframe orders
+most_expensive = orders['price'].max()
 
+#number of unique values in column shoe_color from dataframe orders
+num_colors = orders['shoe_color'].nunique()
